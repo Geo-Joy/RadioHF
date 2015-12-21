@@ -22,17 +22,28 @@
   <script src="js/plugins.js"></script>
   <script src="cordova.js"></script>
   <script src="js/app.js"></script>
-  <script type="text/javascript" charset="utf-8">
-          function onDeviceReady() {
-              if(PushbotsPlugin.isiOS()){
-                PushbotsPlugin.initializeiOS("5677d75d177959c32d8b456b");
-              }
-              if(PushbotsPlugin.isAndroid()){
-                PushbotsPlugin.initializeAndroid("5677d75d177959c32d8b456b", "476308242179");
-              }
-          }
-    </script>
+  <script>
+function onDeviceReady() {
+      document.removeEventListener('deviceready', onDeviceReady, false);
 
+      // Set AdMobAds options:
+      admob.setOptions({
+        publisherId:          "pub-7627589161198551",  // Required
+        interstitialAdId:     "ca-app-pub-7627589161198551/6177381626",  // Optional
+        tappxIdiOS:           "/XXXXXXXXX/Pub-XXXX-iOS-IIII",            // Optional
+        tappxIdAndroid:       "/XXXXXXXXX/Pub-XXXX-Android-AAAA",        // Optional
+        tappxShare:           0.5                                        // Optional
+      });
+
+      // Start showing banners (atomatic when autoShowBanner is set to true)
+      admob.createBannerView();
+
+      // Request interstitial (will present automatically when autoShowInterstitial is set to true)
+      admob.requestInterstitialAd();
+    }
+
+    document.addEventListener("deviceready", onDeviceReady, false);
+  </script>
 </head>
 
 <body ng-controller="networkController">
@@ -57,3 +68,6 @@
 
 </body>
 </html>
+
+<!--         banner: 'ca-app-pub-7627589161198551/4700648429',
+interstitial: 'ca-app-pub-7627589161198551/6177381626' -->
