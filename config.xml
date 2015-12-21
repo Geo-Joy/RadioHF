@@ -46,7 +46,7 @@
 
     <!-- Core plugins -->
     <!-- <gap:plugin name="org.apache.cordova.filetransfer.FileTransfer" /> -->
-    <gap:plugin name="org.apache.cordova.file.FileUtils" />
+   <!--  <gap:plugin name="org.apache.cordova.file.FileUtils" /> -->
     <gap:plugin name="org.apache.cordova.networkinformation.NetworkManager" />
     <gap:plugin name="org.apache.cordova.statusbar.StatusBar" />
 
