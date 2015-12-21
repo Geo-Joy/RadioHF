@@ -37,18 +37,17 @@
     <preference name="auto-hide-splash-screen"    value="true" />           <!-- ios: if set to false, the splash screen must be hidden using a JavaScript API -->
     <preference name="disable-cursor"             value="false" />          <!-- blackberry: prevents a mouse-icon/cursor from being displayed on the app -->
     <preference name="android-installLocation"    value="auto" />           <!-- android: app install location. 'auto' will choose. 'internalOnly' is device memory. 'preferExternal' is SDCard. -->
-    <!--
-        Define a specific version of PhoneGap to build into your app.
+
         <preference name="phonegap-version"       value="3.5.0" />
-    -->
+
 
     <!-- Plugins -->
 
     <!-- Core plugins -->
     <!-- <gap:plugin name="org.apache.cordova.filetransfer.FileTransfer" /> -->
    <!--  <gap:plugin name="org.apache.cordova.file.FileUtils" /> -->
-    <gap:plugin name="org.apache.cordova.networkinformation.NetworkManager" />
-    <gap:plugin name="org.apache.cordova.statusbar.StatusBar" />
+<!--     <gap:plugin name="org.apache.cordova.networkinformation.NetworkManager" />
+<gap:plugin name="org.apache.cordova.statusbar.StatusBar" /> -->
 
     <!-- Third party plugins -->
     <!-- A list of available plugins are available at https://build.phonegap.com/plugins -->
