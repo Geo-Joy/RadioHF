@@ -15,7 +15,7 @@
       <div class="radiobox">
         <ons-row align="center">
           <ons-col width="17%"></ons-col>
-          <ons-col width="66%" align="center">
+          <ons-col width="25%" align="center">
             <img class="rounded" ng-src="{{ radioOptions.albumArt }}">
             <p id="stream-time">{{ radio.currentTime | SecondsToTimeString }}</p>
           </ons-col>
@@ -33,7 +33,7 @@
         <ons-row align="center">
           <ons-col width="32%"></ons-col>
           <ons-col width="36%" align="center">
-            <a href="#" id="btn-play" ng-click="startRadio()" ng-bind-html="renderHtml(buttonIcon)"><span class="ion-ios-play"></span></a>
+            <a href="#" id="btn-play" ng-click="startRadio(); initAds()" ng-bind-html="renderHtml(buttonIcon)"><span class="ion-ios-play"></span></a>
           </ons-col>
           <ons-col width="32%"></ons-col>
         </ons-row>
@@ -44,27 +44,5 @@
     </div>
 
   </ons-page>
-<div ng-controller="adsController">
-
-  <ons-navigator animation="slide" var="adspage">
-    <ons-page>
-      <ons-toolbar>
-        <div class="left">
-        </div>
-        <div class="center">Banners</div>
-      </ons-toolbar>
-
-      <div class="app-page news-page" >
-
-        <p style="text-align:center;">App Content</p>
-
-        <ons-button modifier="large" ng-click="adspage.pushPage('interstitial.html')">Intersitial</ons-button>
-
-      </div>
-
-    </ons-page>
-  </ons-navigator>
-
-</div>
 </ons-navigator>
 
