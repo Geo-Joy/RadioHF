@@ -13,6 +13,13 @@
 
     <div class="details-content glass no-scroll">
       <div class="radiobox">
+          <ons-row align="center">
+          <ons-col width="32%"></ons-col>
+          <ons-col width="36%" align="center">
+            <a href="#" id="btn-play" ng-click="startRadio()" ng-bind-html="renderHtml(buttonIcon)"><span class="ion-ios-play"></span></a>
+          </ons-col>
+          <ons-col width="32%"></ons-col>
+        </ons-row>
         <ons-row align="center">
           <ons-col width="17%"></ons-col>
           <ons-col width="40%" align="center">
@@ -30,13 +37,7 @@
           </ons-col>
           <ons-col width="5%"></ons-col>
         </ons-row>
-        <ons-row align="center">
-          <ons-col width="32%"></ons-col>
-          <ons-col width="36%" align="center">
-            <a href="#" id="btn-play" ng-click="startRadio()" ng-bind-html="renderHtml(buttonIcon)"><span class="ion-ios-play"></span></a>
-          </ons-col>
-          <ons-col width="32%"></ons-col>
-        </ons-row>
+        
       </div>
       <div class="bgbox">
         <img src="images/radio/bg.jpg" class="bg">
