@@ -24,7 +24,7 @@
   <script src="js/app.js"></script>
   <script>
 function onDeviceReady() {
-  alert("ready");
+  //alert("ready");
       document.removeEventListener('deviceready', onDeviceReady, false);
       document.addEventListener('resume', onResume, false);
       document.addEventListener('pause', onPause, false);
@@ -46,7 +46,7 @@ function onDeviceReady() {
     }
 
     function onPause() {
-    alert("pause");
+    //alert("pause");
       admob.setOptions({
         publisherId:          "pub-7627589161198551",  // Required
         interstitialAdId:     "ca-app-pub-7627589161198551/6177381626",  // Optional
@@ -62,7 +62,7 @@ function onDeviceReady() {
       admob.requestInterstitialAd();
     }
     function onResume() {
-   alert("resume");
+   //alert("resume");
       admob.setOptions({
         publisherId:          "pub-7627589161198551",  // Required
         interstitialAdId:     "ca-app-pub-7627589161198551/6177381626",  // Optional
