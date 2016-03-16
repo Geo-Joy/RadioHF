@@ -27,7 +27,8 @@
 <plugin name="cordova-plugin-whitelist" />
 <gap:plugin name="cordova-plugin-admobpro" source="npm" />
     -->
-    <preference name="android-build-tool" value="ant" />
+    <preference name="android-minSdkVersion" value="14" />
+    <preference name="android-build-tool" value="gradle" />
     <preference name="permissions"                value="none"/>
 
 
@@ -56,8 +57,8 @@
 <!--     <gap:plugin name="org.apache.cordova.networkinformation.NetworkManager" />
 <gap:plugin name="org.apache.cordova.statusbar.StatusBar" /> -->
 
-    <!-- Third party plugins
-    <gap:plugin name="pushbots-cordova-plugin" source="npm" /> -->
+    <!-- Third party plugins -->
+    <gap:plugin name="pushbots-cordova-plugin" source="npm" /> 
     <gap:plugin name="cordova-admob" source="npm"/>
     <!-- A list of available plugins are available at https://build.phonegap.com/plugins -->
     <!--
