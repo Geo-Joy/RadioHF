@@ -11,22 +11,22 @@
       </div>
     </ons-toolbar>
 
-    <div class="details-content glass no-scroll">
+    <div class="details-content glass">
       <div class="radiobox">
-          <ons-row align="center">
+        <ons-row align="center">
+          <ons-col width="20%"></ons-col>
+          <ons-col width="60%" align="center">
+            <img class="rounded" ng-src="{{ radioOptions.albumArt }}">
+            <p id="stream-time">{{ radio.currentTime | SecondsToTimeString }}</p>
+          </ons-col>
+          <ons-col width="20%"></ons-col>
+        </ons-row>
+        <ons-row align="center">
           <ons-col width="32%"></ons-col>
           <ons-col width="36%" align="center">
             <a href="#" id="btn-play" ng-click="startRadio()" ng-bind-html="renderHtml(buttonIcon)"><span class="ion-ios-play"></span></a>
           </ons-col>
           <ons-col width="32%"></ons-col>
-        </ons-row>
-        <ons-row align="center">
-          <ons-col width="17%"></ons-col>
-          <ons-col width="40%" align="center">
-            <img class="rounded" ng-src="{{ radioOptions.albumArt }}">
-            <p id="stream-time">{{ radio.currentTime | SecondsToTimeString }}</p>
-          </ons-col>
-          <ons-col width="17%"></ons-col>
         </ons-row>
         <ons-row>
           <ons-col width="5%"></ons-col>
